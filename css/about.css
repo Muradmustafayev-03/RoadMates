@@ -109,10 +109,10 @@ body::-webkit-scrollbar {
 
 .scrolled_down {
     top: 100vh;
-    padding: 3%;
 }
 
 #about {
+    padding: 3%;
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
