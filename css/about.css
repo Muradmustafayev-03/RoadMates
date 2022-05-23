@@ -6,6 +6,7 @@
 .purple {
     color: var(--main_color);
     font-weight: bolder;
+    display: inline;
 }
 
 @keyframes load-ani {
@@ -108,4 +109,16 @@ body::-webkit-scrollbar {
 
 .scrolled_down {
     top: 100vh;
+    padding: 3%;
+}
+
+#about {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.tagline {
+    display: inline-block;
+    width: 25%;
 }
