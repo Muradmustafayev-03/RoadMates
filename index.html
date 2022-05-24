@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <title>RoadMates</title>
     <link rel="icon" href="img/icon.png" type="image/icon type">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/about.css">
@@ -14,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <script src="js/background_animation.js" defer></script>
+    <script src="js/carousel.js" defer></script>
 </head>
 <body>
     <div class="container main">
@@ -47,6 +45,49 @@
                 <p>Split the cost with someone else and travel cheaper!</p>
             </div>
         </div>
+        <div class="description">
+             <p>
+                 Road<span class="purple">Mates</span> is a web platform where you can easily
+                 find a person who suits all your criteria to travel together with them.
+                 A few clicks and you are on a comfortable trip!
+             </p>
+            <br>
+            <div id="carousel">
+                <div class="slide">
+                    <div class="ico_wrapper"><img src="img/profile_ico.png" alt="profile icon"></div>
+                    <p class="caption">Create a free account</p>
+                </div>
+                <div class="slide">
+                    <div class="ico_wrapper"><img src="img/search_ico.png" alt="search icon"></div>
+                    <p class="caption">Search for a post you need</p>
+                </div>
+                <div class="slide">
+                    <div class="ico_wrapper"><img src="img/list_ico.png" alt="list icon"></div>
+                    <p class="caption">Get a list of posts</p>
+                </div>
+                <div class="slide">
+                    <div class="ico_wrapper"><img src="img/choice_ico.png" alt="choice icon"></div>
+                    <p class="caption">Choose the one that you like</p>
+                </div>
+                <div class="slide">
+                    <div class="ico_wrapper"><img src="img/create_ico.png" alt="create icon"></div>
+                    <p class="caption">If you don't like any create your own</p>
+                </div>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+            <br>
+            <button class="click_btn">Start your trip!</button>
+        </div>
     </div>
+    <footer>
+        <p id="copy">&copy Road<span class="purple">Mates</span> 2022</p>
+    </footer>
 </body>
 </html>
