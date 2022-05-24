@@ -94,12 +94,6 @@ body::-webkit-scrollbar {
     transition: 0.2s;
 }
 
-.click_btn:hover {
-    background-color: var(--main_shaded);
-    font-size: 2.2em;
-    transition: 0.1s;
-}
-
 .click_btn:active {
     box-shadow: 0 3px #666;
     transform: translateY(5px);
@@ -199,33 +193,54 @@ footer a {
     transition: 1s;
 }
 
-.contact .ico_wrapper:hover {
-    width: auto;
-    text-align: left;
-    transition: 1s;
-}
-
 .contact .ico_wrapper img {
     width: 30px;
     height: 30px;
     margin: 10px;
 }
 
-.contact .ico_wrapper .contact_hidden {
-    display: none;
+.contact .ico_wrapper {
+    width: auto;
+    text-align: left;
+    transition: 1s;
 }
 
-.contact .ico_wrapper:hover .contact_hidden {
+.contact .ico_wrapper .contact_hidden {
     display: inline;
-    margin-right: 15px;
+    margin-right: 10px;
+    font-size: smaller;
     color: white;
 }
 
+@media screen and (min-width: 900px) {
+    .click_btn:hover {
+        background-color: var(--main_shaded);
+        font-size: 2.2em;
+        transition: 0.1s;
+    }
+
+    .contact .ico_wrapper .contact_hidden {
+        display: none;
+    }
+
+    .contact .ico_wrapper:hover {
+        width: auto;
+        text-align: left;
+        transition: 1s;
+    }
+
+    .contact .ico_wrapper:hover .contact_hidden {
+        display: inline;
+        margin-right: 15px;
+        color: white;
+    }
+}
+
 @media screen and (max-width: 600px) {
-    /*.main {*/
-    /*    background-image: url("../img/background.jpg");*/
-    /*    background-size: cover;*/
-    /*}*/
+    .main {
+        background-image: url("../img/background.jpg");
+        background-size: cover;
+    }
 
     .content {
         background: none;
@@ -255,6 +270,10 @@ footer a {
 
     footer {
         top: 220vh;
+    }
+
+    .contact .ico_wrapper {
+        width: 300px;
     }
 }
 
